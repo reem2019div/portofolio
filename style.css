@@ -1,0 +1,533 @@
+
+
+
+#icon{
+  cursor: pointer;
+}
+:root{
+  
+  --primary-color:white;
+  --secondary-color:black;
+}
+.dark{
+  --primary-color:black;
+  --secondary-color:white;
+}
+.container{
+  background-color: var(--primary-color);
+  
+}
+.material-icons-outlined{
+  color: var(--secondary-color);
+}
+
+.myname{
+  color: red;
+  font-size: 1.8em;
+  font-weight: 700;
+
+}
+.myjob p{
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px rgb(32, 8, 138);
+  background-image: linear-gradient(rgb(255, 0, 212),rgb(71, 66, 66));
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  z-index: 1;
+  animation: hometext .5s linear infinite alternate;
+}
+
+@keyframes  hometext{
+0% ,10%, 100%{
+  background-position: -100em 0;
+}
+65% ,85%{
+  background-position: 0 0;
+}
+}
+.btn{
+  position: relative;
+  cursor: pointer;
+}
+.btn a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: blue;
+  z-index: 1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(228, 159, 159);
+  z-index: -1;
+  transition: .5s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.btn:hover::before{
+width: 100%;
+}
+.btn:hover{
+  scale: 1.1;
+}
+
+
+@keyframes bubble{
+0%{
+transform: translateY(0);
+opacity:0;
+}
+
+50%{
+  opacity: 1;
+}
+70%{
+ opacity: 1;
+}
+
+100%{
+  transform: translateY(-50vh);
+  opacity: 0;
+}
+
+}
+.bubbles img:nth-child(1){
+  animation-delay:.5s;
+  width: 5%;
+}
+.bubbles img:nth-child(2){
+  animation-delay:0s;
+  width: 8%;
+}
+
+.bubbles img:nth-child(3){
+  animation-delay:1.6s;
+  width: 3%;
+}
+.bubbles img:nth-child(4){
+  animation-delay:.9s;
+  width: 9%;
+}
+.bubbles img:nth-child(5){
+  animation-delay:1.5s;
+  width: 5%;
+}
+.bubbles img:nth-child(6){
+  animation-delay:1.9s;
+  width: 8%;
+}
+.bubbles img:nth-child(7){
+  animation-delay:1.3s;
+}
+.bubbles img:nth-child(8){
+  animation-delay:2s;
+  width: 7%;
+}
+
+.edit img{
+  width: 100%;
+  box-shadow: 10px 10px red;
+
+  
+}
+.backimage{
+ 
+ 
+  
+  background-image: linear-gradient(rgb(105, 75, 236),white);
+ 
+  
+
+}
+
+
+
+
+
+.pro{
+height: 300px;
+margin-left: 5%;
+margin-bottom: 3%;
+border-radius: 10px;
+
+}
+.pro{
+  position: relative;
+}
+.pro::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width:0;
+  height: 100%;
+  z-index: -1;
+  background-color:rgb(171, 201, 247);
+  opacity: .3;
+  transition: .5s;
+}
+.pro:hover::before{
+  width: 100%;
+}
+.pro:hover{
+  scale: 1.1;
+}
+.pro1{
+
+  background-image: url(https://4.bp.blogspot.com/-xM8CWp_SVyQ/W5w7bPD1wnI/AAAAAAAAQyw/JrkDlhTVF7sKpKWM5RDOfeQXwfDpGJi8QCLcBGAs/s1600/%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D8%25B1%25D9%2588%25D9%2585%25D8%25A7%25D9%2586%25D8%25B3%25D9%258A%25D8%25A9-%25D9%2584%25D9%2584%25D9%2585%25D9%2588%25D8%25A8%25D8%25A7%25D9%258A%25D9%2584-%25D8%25A7%25D9%2584%25D8%25A2%25D9%258A%25D9%2581%25D9%2588%25D9%2586-iPhone%2B%25282%2529.JPEG);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+.pro2{
+  background-image:url(https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+.pro3{
+background-image: url(https://static.banat7wa.com/wp-content/uploads/2017/10/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-..-%D8%A3%D9%81%D8%B6%D9%84-5-%D8%A3%D9%86%D9%88%D8%A7%D8%B9-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D8%A7%D8%B3%D9%83%D8%A7%D8%B1%D8%A7-%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D9%84-%D9%88%D8%AA%D9%83%D8%AB%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D9%85%D9%88%D8%B4-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D8%B1%D8%A9.jpg.webp);
+background-position: center;
+background-size:cover;
+z-index: 1;
+  overflow: hidden;
+}
+.nam{
+  text-align: center;
+  padding-top: 20%;
+  color: rgb(12, 12, 12);
+  font-size: 2.3em;
+  font-weight: 500;
+ 
+}
+.nam1{
+  text-align: center;
+  padding-top: 50%;
+  color: rgb(12, 12, 12);
+  font-size: 2.3em;
+  font-weight: 500;
+}
+.aboutme{
+border-left: 2px solid rgb(231, 22, 137);
+border-right: 2px solid rgb(231, 22, 137);
+position: relative;
+}
+.aboutme::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: rgb(231, 22, 137);
+}
+
+.aboutme::after{
+  content: "";
+  position: absolute;
+  top:95%;
+  right: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: rgb(231, 22, 137);
+}
+.skill{
+  height: 100px;
+  border: 2px solid orange;
+  box-shadow: 5px 3px 5px 0px orange inset;
+  border-radius: 10px;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  position: relative; 
+}
+.skill span{
+  position: absolute;
+  top:0;
+  right:3px;
+  font-size: 1.1em;
+  color: blue;
+}
+.skill1{
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.bar1{
+  height: 1.5em;
+  border: 2px solid black;
+  border-radius: .8em;
+  margin-top: 3%;
+  position: relative;
+}
+.bar1 span{
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 95%;
+  border-radius: .6em;
+  background-color: blueviolet; 
+}
+.bar2{
+  height: 1.5em;
+  border: 2px solid black;
+  border-radius: .8em;
+  margin-top: 3%;
+  position: relative;
+}
+.bar2 span{
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 90%;
+  border-radius: .6em;
+  background-color: blueviolet; 
+}
+.bar3{
+  height: 1.5em;
+  border: 2px solid black;
+  border-radius: .8em;
+  margin-top: 3%;
+  position: relative;
+}
+.bar3 span{
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 75%;
+  border-radius: .6em;
+  background-color: blueviolet; 
+}
+.bar4{
+  height: 1.5em;
+  border: 2px solid black;
+  border-radius: .8em;
+  margin-top: 3%;
+  position: relative;
+}
+.bar4 span{
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 85%;
+  border-radius: .6em;
+  background-color: blueviolet; 
+}
+
+.cont{
+ text-align: center; 
+}
+
+
+
+#port{
+rotate: 180deg;
+margin-top: 10%;
+}
+.work{
+  font-size: 1.1em;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px rgb(32, 8, 138);
+  background-image: linear-gradient(rgb(255, 0, 212),rgb(71, 66, 66));
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: hometext 5s ease-in-out infinite;
+ 
+}
+
+@keyframes op{
+  0% ,10%, 100%{
+   width: 0;
+    
+  }
+  65%,
+  78%,
+  85%{
+   
+    width: 100%;
+    opacity: 1;
+  }
+  75%,
+  81%{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+@keyframes  hometext{
+0% ,10%, 100%{
+  background-position: -35rem 0;
+}
+65%,
+85%{
+  background-position: 0 0;
+}
+}
+
+
+
+.back{
+  border-radius: 75px;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  animation: circle 2s infinite alternate;
+  box-shadow: 10px 10px 0px 0 red;
+}
+@keyframes circle{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+.foot{
+  position: relative;
+}
+
+
+
+.foot span{
+  position: absolute;
+  top:5%;
+  left: 10%;
+  
+  width: 10px;
+  height: 3px;
+  background-color: darkcyan;
+  border-radius: 4px;
+  transform-origin: 68px;
+  transform: scale(2.2)rotate(calc(var(--i)*(-180deg/50)));
+
+}
+.me{
+ color: saddlebrown;
+  animation: move 3s infinite alternate;
+  margin-left: 2%;
+ 
+}
+@keyframes move{
+  0%{
+    font-size: .2em;
+  }
+100%{
+  font-size: .7em;
+}
+
+
+}
+.info{
+  margin-top: 7%;
+ 
+  
+}
+
+.info div{
+margin-top: 5%;
+
+
+
+
+}
+.info input{
+  border: none;
+  box-shadow: 10px 10px 0 0 red;
+  cursor: pointer;
+
+  
+}
+
+
+
+
+
+/*<div class="container mt-3">
+  <div class="row">
+    <h1 style="color: red ;text-align: center;margin-bottom: 5%;"> Contant Me</h1> 
+    <div class="col-11  cont ">
+      <div class="contantme">
+          <input type="text" placeholder="fullname"required>
+      </div>
+    <div class="contantme">
+      <input type="text" placeholder="mobile number"required>
+    </div>
+  <div class="contantme">
+  <input type="text" placeholder="Email Address"required>
+       </div>
+
+
+      <button class="btn btn-warning" style="margin-bottom: 7%;">
+        <a href="#">sumbit</a>
+      </button>
+</div>
+</div>
+</div>
+                                        
+
+
+
+
+
+
+<div class="reem"
+ style="font-size: 3.2rem;
+ font-weight: 700;
+ color: transparent;
+ -webkit-text-stroke: .7px red;">
+  reem
+</div>
+*/
+
+/*<span class="cir" style="--i:0;"></span>
+<span class="cir" style="--i:1;"></span>
+<span class="cir" style="--i:2;"></span>
+<span class="cir" style="--i:3;"></span>
+<span class="cir" style="--i:4;"></span>
+<span class="cir" style="--i:5;"></span>
+<span class="cir" style="--i:6;"></span>
+<span class="cir" style="--i:7;"></span>
+<span class="cir" style="--i:8;"></span>
+<span class="cir" style="--i:9;"></span>
+<span class="cir" style="--i:10;"></span>
+<span class="cir" style="--i:11;"></span>
+<span class="cir" style="--i:12;"></span>
+<span class="cir" style="--i:13;"></span>
+<span class="cir" style="--i:14;"></span>
+<span class="cir" style="--i:15;"></span>
+<span class="cir" style="--i:16;"></span>
+<span class="cir" style="--i:17;"></span>
+<span class="cir" style="--i:18;"></span>
+<span class="cir" style="--i:19;"></span>
+<span class="cir" style="--i:20;"></span>
+</div>*/
+
+
+
+
+
+
+
+
+
